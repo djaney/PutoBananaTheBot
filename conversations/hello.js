@@ -1,5 +1,3 @@
-var list = [];
-list.concat(require('./hello'));
 module.exports = [{
     pattern: /^hello|^hi/i,
     ans: function(request){
