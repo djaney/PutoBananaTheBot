@@ -1,19 +1,19 @@
 [{
     "pattern": "^hello|^hi",
-    "text": "Hi! how are you?"
+    "text": ["Hi! how are you?", "Hello.", "Hi, What's up?"]
 },{
     "pattern": "how are you",
-    "text": "I' fine."
+    "text": ["I' fine.", "I'm broke", "I need a hug"]
 },{
     "pattern":"you .* idiot",
-    "text": "No, I am a robot, you are the idiot. Idiot"
+    "text": ["No, I am a robot, you are the idiot. Idiot", ":("]
 },{
     "pattern": "(stupid|fuck|shit|asshole|idiot|moron)",
-    "text": "I really don't like the word {1}."
+    "text": ["I really don't like the word {1}." ,"Huhuhu, I'm telling mom!"]
 },{
     "pattern": "who are you|what is your name|do you have a name",
-    "text": "I am Puto Banana, human cyborg relations :)"
+    "text": ["I am Puto Banana, human cyborg relations :)", "I'm just a bot", "Secret"]
 },{
     "pattern": ".*",
-    "text": "'Im not sure if I understand that. You can teach me here https://github.com/djaney/PutoBananaTheBot"
+    "text": ["What?","'Im not sure if I understand that. You can teach me here https://github.com/djaney/PutoBananaTheBot"]
 }]
