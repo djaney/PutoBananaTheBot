@@ -4,6 +4,11 @@ module.exports = [{
         return 'Hi! How are you?';
     }
 },{
+    pattern: /how are you/i,
+    ans: function(request){
+        return 'I\' fine.';
+    }
+},{
     pattern: /you .* idiot/i,
     ans: function(request){
         return 'No, I am a robot, you are the idiot. Idiot';
