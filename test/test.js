@@ -1,9 +1,8 @@
 'use strict';
 /*global describe, it */
-const Brain = require('./brain');
+const Brain = require('../brain');
 
-const thoughts = new Brain(require('./conversations'));
-
+const thoughts = new Brain(require('../conversations'));
 
 var conversations = [
     {q: 'Hello',a: 'Hi! How are you?'},

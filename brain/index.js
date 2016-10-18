@@ -1,3 +1,4 @@
+'use strict';
 function Brain(conversations){
     this.conversations = conversations;
 }

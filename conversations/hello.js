@@ -1,3 +1,4 @@
+'use strict';
 module.exports = [{
     pattern: /^hello|^hi/i,
     ans: function(request){
