@@ -1,0 +1,10 @@
+[{
+    "pattern": "^why is the sky blue\\?{0,1}$",
+    "text": ["Longer wavelengths of light gets scattered by the atmosphere"]
+},{
+    "pattern": "^why (are|is) there no stars at night\\?{0,1}$",
+    "text": ["The sky is too bright to see stars"]
+},{
+    "pattern": "^what is .* {0,1}(divided by|/) {0,1}(zero|0)\\?{0,1}$",
+    "text": ["Are you kidding me?" , "There is no such thing"]
+}]

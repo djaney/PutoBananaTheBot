@@ -3,7 +3,7 @@
     "text": ["Ahmed","Matobato","Rico Jay"]
 },{
     "pattern": "Ahmed who\\?{0,1}$",
-    "text": ["Ahmed the payphone trying to call home. All of my change I spent on you"]
+    "text": ["Ahmed the payphone trying to call home. All of my change I spent on you.. :D"]
 },{
     "pattern": "Matobato who\\?{0,1}$",
     "text": ["Matobato gentlemen..."]

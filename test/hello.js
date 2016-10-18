@@ -1,31 +1,29 @@
 'use strict';
 /*global describe, it */
 const Brain = require('../brain');
-
-const thoughts = new Brain(require('../conversations'));
-
-var conversations = [
-    {q: 'Hello',a: 'Hi! how are you?'},
-    {q: 'Are you stupid?',a: 'I really don\'t like the word stupid.'},
-    {q: 'What the fuck?',a: 'I really don\'t like the word fuck.'},
-    {q: 'What a piece of shit',a: 'I really don\'t like the word shit.'},
-    {q: 'Kiss my asshole',a: 'I really don\'t like the word asshole.'},
-    {q: 'Idiot',a: 'I really don\'t like the word Idiot.'},
-    {q: 'What a moron',a: 'I really don\'t like the word moron.'},
-    {q: 'You are a stupid idiot',a: 'No, I am a robot, you are the idiot. Idiot'},
+var convo = [];
+convo = convo.concat(require('../conversations'));
+convo = convo.concat(require('../callbacks'));
+const thoughts = new Brain(convo,['fallback']);
+var cases = [
+    'hello',
+    'Ahmed who?',
+    'Rico Jay who?',
+    'define torotot of the philippines',
+    'why are there no stars at night',
+    'what is one divided by zero',
+    'what is 1/0',
+    'what is 1+1',
+    'what is 1-1',
+    'what is 1*1',
+    'what is 3/8',
+    'what is (3/8)+ 4',
+    'what is 1/1231241',
 ];
 
-var assert = require('assert');
-describe('Brain', function() {
-    describe('#talk()', function() {
-        it('Hello', function() {
-            for (var i = 0; i < conversations.length; i++) {
-                var c = conversations[i];
-                assert.equal('string',typeof thoughts.talk({
-                    text: c.q
-                }));
-            }
-
-        });
-    });
-});
+for (var i = 0; i < cases.length; i++) {
+    var c = cases[i];
+    console.log(c, ' -- ', thoughts.talk({
+        text: c
+    }));
+}
