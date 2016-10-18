@@ -13,7 +13,4 @@
 },{
     "pattern": "who are you|what is your name|do you have a name",
     "text": ["I am Puto Banana, human cyborg relations :)", "I'm just a bot", "Secret"]
-},{
-    "pattern": ".*",
-    "text": ["What?","'Im not sure if I understand that. You can teach me here https://github.com/djaney/PutoBananaTheBot"]
 }]

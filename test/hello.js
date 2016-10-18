@@ -21,7 +21,7 @@ describe('Brain', function() {
         it('Hello', function() {
             for (var i = 0; i < conversations.length; i++) {
                 var c = conversations[i];
-                assert.equal(c.a, thoughts.talk({
+                assert.equal('string',typeof thoughts.talk({
                     text: c.q
                 }));
             }

@@ -1,0 +1,16 @@
+[{
+    "pattern": "who'{0,1}s{0,1} there",
+    "text": ["Ahmed","Matobato","Rico Jay"]
+},{
+    "pattern": "Ahmed who\\?{0,1}$",
+    "text": ["Ahmed the payphone trying to call home. All of my change I spent on you"]
+},{
+    "pattern": "Matobato who\\?{0,1}$",
+    "text": ["Matobato gentlemen..."]
+},{
+    "pattern": "rico jay who\\?{0,1}$",
+    "text": ["I'm bullet proof, nothing to lose, far away far away, Rico Jay, you take your aim... hahahaha"]
+},{
+    "pattern": "(.*) who\\?{0,1}$",
+    "text": ["I have no knock-knock joke about {1}"]
+}]

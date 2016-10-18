@@ -1,6 +1,7 @@
 'use strict';
-function Brain(conversations){
+function Brain(conversations, fallback){
     this.conversations = conversations;
+    this.conversations = this.conversations.concat(fallback);
 }
 
 Brain.prototype.talk = function(req){
@@ -9,6 +10,12 @@ Brain.prototype.talk = function(req){
         var regex = new RegExp(conv.pattern,'i');
         var rand = Math.floor((Math.random() * conv.text.length));
         var reply = conv.text[rand];
+        var isReply = conv.isReply || false;
+
+        if(isReply && !req.postback){
+            continue;
+        }
+
         if(regex.test(req.text)){
             var match = regex.exec(req.text);
             for (var j = 0; j < match.length; j++) {
