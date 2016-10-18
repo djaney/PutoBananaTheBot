@@ -1,4 +1,4 @@
 'use strict';
 var list = [];
-list.concat(require('./hello'));
+list = list.concat(require('./hello.json'));
 module.exports = list;

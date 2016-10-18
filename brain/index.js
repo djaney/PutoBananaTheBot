@@ -6,9 +6,14 @@ function Brain(conversations){
 Brain.prototype.talk = function(req){
     for (var i = 0; i < this.conversations.length; i++) {
         var conv = this.conversations[i];
-        if(conv.pattern.test(req.text)){
-            var match = conv.pattern.exec(req.text);
-            return conv.ans(req, match);
+        var regex = new RegExp(conv.pattern,'i');
+        var reply = conv.text;
+        if(regex.test(req.text)){
+            var match = regex.exec(req.text);
+            for (var j = 0; j < match.length; j++) {
+                reply = reply.replace('{'+j+'}',match[j]);
+            }
+            return reply;
         }
     }
 };

@@ -5,7 +5,7 @@ const Brain = require('../brain');
 const thoughts = new Brain(require('../conversations'));
 
 var conversations = [
-    {q: 'Hello',a: 'Hi! How are you?'},
+    {q: 'Hello',a: 'Hi! how are you?'},
     {q: 'Are you stupid?',a: 'I really don\'t like the word stupid.'},
     {q: 'What the fuck?',a: 'I really don\'t like the word fuck.'},
     {q: 'What a piece of shit',a: 'I really don\'t like the word shit.'},

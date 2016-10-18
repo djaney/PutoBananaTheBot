@@ -1,0 +1,19 @@
+[{
+    "pattern": "^hello|^hi",
+    "text": "Hi! how are you?"
+},{
+    "pattern": "how are you",
+    "text": "I' fine."
+},{
+    "pattern":"you .* idiot",
+    "text": "No, I am a robot, you are the idiot. Idiot"
+},{
+    "pattern": "(stupid|fuck|shit|asshole|idiot|moron)",
+    "text": "I really don't like the word {1}."
+},{
+    "pattern": "who are you|what is your name|do you have a name",
+    "text": "I am Puto Banana, human cyborg relations :)"
+},{
+    "pattern": ".*",
+    "text": "'Im not sure if I understand that. You can teach me here https://github.com/djaney/PutoBananaTheBot"
+}]
