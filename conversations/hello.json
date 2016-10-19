@@ -1,7 +1,4 @@
 [{
-    "pattern": "^hello|^hi",
-    "text": ["Hi! how are you?", "Hello.", "Hi, What's up?"]
-},{
     "pattern": "how are you",
     "text": ["I' fine.", "I'm broke", "I need a hug"]
 },{

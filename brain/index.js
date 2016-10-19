@@ -33,8 +33,10 @@ Brain.prototype.talk = function(req){
             }
             return reply;
         }else if(typeof reply == 'function' && regex.test(req.text)){
-
-            return reply(req, match);
+            var replyObject = reply(req, match);
+            if(replyObject){
+                return replyObject;
+            }
         }
     }
 
